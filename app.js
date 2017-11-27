@@ -53,7 +53,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(express.static('dist'));
+app.use(express.static('dist/static'));
 
 module.exports = app;
 
