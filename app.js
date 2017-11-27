@@ -4,9 +4,9 @@ const bunyan = require('bunyan');
 const history = require('connect-history-api-fallback');
 
 // Logging everything
-const logfilePath = __dirname + "/stay-bot-admin.log";
+const logfilePath = __dirname + "/pwa-admin.log";
 const loggerOpts = {
-  name: 'Stay Bot Admin',
+  name: 'PWS example app',
   serializers: {
     req: bunyan.stdSerializers.req,
     res: bunyan.stdSerializers.res,
