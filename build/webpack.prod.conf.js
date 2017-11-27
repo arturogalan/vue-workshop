@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 var loadMinified = require('./load-minified');
 
 const env = process.env.NODE_ENV === 'testing'
@@ -121,6 +122,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
+    new FaviconsWebpackPlugin('static/VueJSMad_384.png'),
     // service worker caching
     new SWPrecacheWebpackPlugin({
       cacheId: 'my-vue-app',
