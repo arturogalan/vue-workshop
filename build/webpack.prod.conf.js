@@ -122,7 +122,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
-    new FaviconsWebpackPlugin('static/VueJSMad_384.png'),
+    new FaviconsWebpackPlugin('../static/VueJSMad_384.png'),
     // service worker caching
     new SWPrecacheWebpackPlugin({
       cacheId: 'my-vue-app',
