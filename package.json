@@ -151,10 +151,6 @@
       "!**/node_modules/**"
     ]
   },
-  "engines": {
-    "node": "9.1.0",
-    "npm": "5.3"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
