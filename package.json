@@ -152,8 +152,8 @@
     ]
   },
   "engines": {
-    "node": "8",
-    "npm": "5.3"
+    "node": "9.1.0",
+    "npm": "5.5.1"
   },
   "browserslist": [
     "> 1%",
