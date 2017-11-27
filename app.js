@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const bunyan = require('bunyan');
 const history = require('connect-history-api-fallback');
+const favicon = require('serve-favicon');
 
 // Logging everything
 const logfilePath = __dirname + "/pwa-admin.log";
@@ -53,7 +54,8 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(express.static('dist/static'));
+app.use(express.static('dist'));
+app.use(favicon(__dirname + '/../static/favicon.ico'));
 
 module.exports = app;
 
